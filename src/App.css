@@ -1,0 +1,109 @@
+.App {
+  /*text-align: center;*/
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* Date range selector */
+.c-date-range-text {
+  font-size: 18px;
+}
+.DateRangePickerInput__withBorder  {
+  border: none;
+
+}
+.DateRangePicker {
+  margin-left: 10px;
+}
+
+.DateInput_input {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.DateInput_input:hover {
+  background-color: lightyellow;
+}
+
+.c-settings {
+  margin: 15px;
+}
+
+.c-symbol {
+  display: inline;
+  float: left;
+}
+
+.c-spinner-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.c-spinner-container .fa-spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: white;
+  font-size: 72px;
+}
+
+/* Info */
+.c-info-container {
+  margin: 30px;
+}
+
+/* Utilities */
+.u-font-24 {
+  font-size: 24px;
+}
+
+.u-font-18 {
+  font-size: 18px;
+}
+
+.u-error {
+  color: red;
+}
+
+.about {
+  margin: 30px;
+}
