@@ -54,17 +54,22 @@ class App extends Component {
 
             if (chartData.messages && chartData.messages.length) {
                 this.setState({
-                    error: true,
+                    error: 'Invalid symbol',
                     loading: false
                 });
             } else {
                 this.setState({
-                    error: false,
+                    error: null,
                     chartData: chartData,
                     loading: false
                 });
             }
 
+        }, () => {
+            this.setState({
+                error: 'An unknown error has occurred',
+                loading: false
+            });
         });
     }
 
@@ -98,21 +103,19 @@ class App extends Component {
                         </Col>
                         <Col sm={4} className="text-right">
                             <Row>
-                                <Col xs={8}>
+                                <Col xs={7} md={9}>
                                     <input className="c-symbol form-control" defaultValue="CBOE" onChange={(e) => this.onChange(e)} onKeyPress={(e) => this.onKeyPress(e)}/>
                                 </Col>
-                                <Col xs={4}>
+                                <Col xs={5} md={3}>
                                     <a className="btn btn-primary c-symbol-button form-control" onClick={() => this.dateChanged(this.state.startDate, this.state.endDate, this.state.symbol)}>Set</a>
                                 </Col>
                             </Row>
-
-
                         </Col>
                     </Row>
 
                     {this.state.error ? <div className="row">
                                             <div className="col-xs-12 text-right">
-                                                <span className="u-error">Invalid symbol</span>
+                                                <span className="u-error">{this.state.error}</span>
                                             </div>
                                         </div> : ''}
                 </Row>

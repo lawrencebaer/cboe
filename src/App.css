@@ -29,6 +29,37 @@
 }
 
 
+.c-settings {
+  margin: 15px;
+}
+
+.c-symbol {
+  display: inline;
+  float: left;
+}
+
+.c-spinner-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.c-spinner-container .fa-spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: white;
+  font-size: 72px;
+}
+
+.about {
+  margin: 30px;
+}
+
+
 /* Date range selector */
 .c-date-range-text {
   font-size: 18px;
@@ -60,31 +91,6 @@
   background-color: lightyellow;
 }
 
-.c-settings {
-  margin: 15px;
-}
-
-.c-symbol {
-  display: inline;
-  float: left;
-}
-
-.c-spinner-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.c-spinner-container .fa-spinner {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  color: white;
-  font-size: 72px;
-}
 
 /* Info */
 .c-info-container {
@@ -104,6 +110,3 @@
   color: red;
 }
 
-.about {
-  margin: 30px;
-}

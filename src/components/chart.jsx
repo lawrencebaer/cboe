@@ -45,12 +45,8 @@ export default class Chart extends React.Component {
             }
 
             options.data[0].dataPoints = dataPoints;
-            if (dataPoints.length) {
-                if (this.chart) {
-                    this.chart.render();
-                }
-
-
+            if (dataPoints.length && this.chart) {
+                this.chart.render();
             }
         }
 

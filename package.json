@@ -14,8 +14,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "d3-dsv": "^1.0.8",
-    "d3-time-format": "^2.1.1",
     "moment": "^2.22.2",
     "react-bootstrap": "^0.32.1",
     "react-dates": "^17.1.0",
